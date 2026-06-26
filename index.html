@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apex — премиум-агентство</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+    <!-- ===== ПРЕЛОАДЕР ===== -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo">APEX</div>
+        <div class="preloader-line"></div>
+    </div>
+
+    <!-- ===== НАВИГАЦИЯ ===== -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">APEX</div>
+            <nav class="nav">
+                <a href="#about">О нас</a>
+                <a href="#services">Услуги</a>
+                <a href="#cases">Кейсы</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#contact" class="nav-btn">Начать</a>
+            </nav>
+            <div class="burger" id="burger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="about">
+        <div class="hero-video-overlay">
+            <div class="hero-video-bg">
+                <!-- БЕСПЛАТНОЕ ВИДЕО: вставь ссылку на любой MP4 футаж с интернета -->
+                <!-- Например, можно использовать видео с https://www.videvo.net/ -->
+                <video autoplay muted loop playsinline id="heroVideo">
+                    <source src="https://cdn.coverr.co/videos/coverr-aerial-view-of-city-1571/1080p.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="hero-video-overlay-gradient"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-grid">
+                <div class="hero-text" data-aos="fade-up">
+                    <div class="hero-badge">✦ PREMIUM AGENCY</div>
+                    <h1>Мы создаём <br /><span class="highlight">истории успеха</span></h1>
+                    <p>Стратегия, дизайн, технологии — превращаем ваши идеи в продукты, которые меняют рынки.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-primary">Обсудить проект</a>
+                        <a href="#cases" class="btn-secondary">Наши работы →</a>
+                    </div>
+                    <div class="hero-stats" id="heroStats">
+                        <div><span class="countup" data-target="120">0</span>+ проектов</div>
+                        <div><span class="countup" data-target="15">0</span>+ наград</div>
+                        <div><span class="countup" data-target="97">0</span>% удовлетворённости</div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="globe"></div>
+                    <div class="floating-icons">
+                        <span>⚡</span>
+                        <span>🎯</span>
+                        <span>🚀</span>
+                        <span>💎</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===== УСЛУГИ (С FLIP-ЭФФЕКТОМ) ===== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-label">Что мы делаем</div>
+            <h2 class="section-title">Наши <span class="highlight">услуги</span></h2>
+            <div class="services-grid">
+                <div class="service-flip">
+                    <div class="service-flip-inner">
+                        <div class="service-flip-front">
+                            <div class="service-icon"><i class="fas fa-bullseye"></i></div>
+                            <h3>Стратегия</h3>
+                            <p>Исследуем рынок, формируем УТП и дорожную карту роста.</p>
+                        </div>
+                        <div class="service-flip-back">
+                            <h4>Стратегия роста</h4>
+                            <ul>
+                                <li>Анализ рынка и конкурентов</li>
+                                <li>Формирование УТП</li>
+                                <li>Дорожная карта на 12 месяцев</li>
+                            </ul>
+                            <span class="flip-price">от 50 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-flip">
+                    <div class="service-flip-inner">
+                        <div class="service-flip-front">
+                            <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
+                            <h3>Дизайн</h3>
+                            <p>Создаём визуальные идентичности и интерфейсы, которые влюбляют.</p>
+                        </div>
+                        <div class="service-flip-back">
+                            <h4>Дизайн-система</h4>
+                            <ul>
+                                <li>Айдентика и брендбук</li>
+                                <li>UI/UX для сайтов и приложений</li>
+                                <li>Анимация и интерактив</li>
+                            </ul>
+                            <span class="flip-price">от 35 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-flip">
+                    <div class="service-flip-inner">
+                        <div class="service-flip-front">
+                            <div class="service-icon"><i class="fas fa-code"></i></div>
+                            <h3>Разработка</h3>
+                            <p>Воплощаем дизайн в высоконагруженные и надёжные продукты.</p>
+                        </div>
+                        <div class="service-flip-back">
+                            <h4>Разработка под ключ</h4>
+                            <ul>
+                                <li>Сайты и веб-приложения</li>
+                                <li>API и интеграции</li>
+                                <li>Техническая поддержка 24/7</li>
+                            </ul>
+                            <span class="flip-price">от 80 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-flip">
+                    <div class="service-flip-inner">
+                        <div class="service-flip-front">
+                            <div class="service-icon"><i class="fas fa-rocket"></i></div>
+                            <h3>Маркетинг</h3>
+                            <p>Запускаем и масштабируем рекламные кампании с ROI до 500%.</p>
+                        </div>
+                        <div class="service-flip-back">
+                            <h4>Digital-маркетинг</h4>
+                            <ul>
+                                <li>Контекстная и таргетированная реклама</li>
+                                <li>SEO и контент-маркетинг</li>
+                                <li>Аналитика и оптимизация</li>
+                            </ul>
+                            <span class="flip-price">от 30 000 ₽</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TIMELINE (ИСТОРИЯ) ===== -->
+    <section class="timeline-section">
+        <div class="container">
+            <div class="section-label">Наша история</div>
+            <h2 class="section-title">Этапы <span class="highlight">роста</span></h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2020</span>
+                        <h4>Основание</h4>
+                        <p>Начало пути с командой из 3 человек и первой стратегией для стартапа.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2021</span>
+                        <h4>Первый прорыв</h4>
+                        <p>Победа в конкурсе инноваций и первые крупные клиенты из топ-50 компаний.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2023</span>
+                        <h4>Масштабирование</h4>
+                        <p>Открытие офисов в двух городах и запуск собственных продуктов.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-year">2025</span>
+                        <h4>Новый уровень</h4>
+                        <p>15 наград, 120+ проектов и международное признание.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== КЕЙСЫ (ГАЛЕРЕЯ) ===== -->
+    <section class="cases" id="cases">
+        <div class="container">
+            <div class="section-label">Портфолио</div>
+            <h2 class="section-title">Наши <span class="highlight">кейсы</span></h2>
+            <div class="cases-carousel" id="casesCarousel">
+                <div class="cases-track" id="casesTrack">
+                    <div class="case-slide">
+                        <div class="case-card">
+                            <div class="case-image" style="background: linear-gradient(145deg, #1a1a2e, #2d2d44);">
+                                <span class="case-emoji">🏦</span>
+                            </div>
+                            <div class="case-info">
+                                <h4>Финтех-платформа</h4>
+                                <p>AI-система анализа рисков. Обработка за 0.4 сек.</p>
+                                <span class="case-tag">AI, Fintech</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-slide">
+                        <div class="case-card">
+                            <div class="case-image" style="background: linear-gradient(145deg, #1a1a2e, #1b3a4a);">
+                                <span class="case-emoji">🛒</span>
+                            </div>
+                            <div class="case-info">
+                                <h4>E-com рекомендации</h4>
+                                <p>Персонализация +34% к продажам.</p>
+                                <span class="case-tag">ML, E-commerce</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-slide">
+                        <div class="case-card">
+                            <div class="case-image" style="background: linear-gradient(145deg, #1a1a2e, #2a1a3a);">
+                                <span class="case-emoji">🏥</span>
+                            </div>
+                            <div class="case-info">
+                                <h4>Telemed-платформа</h4>
+                                <p>Онлайн-консультации с интеграцией ЭМК.</p>
+                                <span class="case-tag">MedTech, Cloud</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-slide">
+                        <div class="case-card">
+                            <div class="case-image" style="background: linear-gradient(145deg, #1a1a2e, #3a2a1a);">
+                                <span class="case-emoji">🎮</span>
+                            </div>
+                            <div class="case-info">
+                                <h4>Геймификация</h4>
+                                <p>Образовательная платформа с игровыми механиками.</p>
+                                <span class="case-tag">EdTech, GameDev</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevCase"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-dots" id="dots"></div>
+                    <button class="carousel-btn" id="nextCase"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ОТЗЫВЫ ===== -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-label">Клиенты о нас</div>
+            <h2 class="section-title">Отзывы <span class="highlight">и результаты</span></h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p>"Apex — это уровень, к которому мы стремились. За год наш рост составил 240%."</p>
+                    <div class="review-author">— Иван, CEO TechStart</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p>"Команда слышит и понимает. Результат превзошёл ожидания."</p>
+                    <div class="review-author">— Ольга, директор ShopWise</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p>"Стратегия от Apex изменила наш бизнес. Мы вышли на новый рынок."</p>
+                    <div class="review-author">— Дмитрий, основатель HealthCore</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ФОРМА ===== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="section-label">Свяжитесь с нами</div>
+                    <h2>Расскажите о <span class="highlight">вашем проекте</span></h2>
+                    <p>Заполните форму — мы свяжемся с вами в течение 2 часов и предложим стратегию.</p>
+                    <div class="contact-links">
+                        <a href="#"><i class="fas fa-envelope"></i> hello@apex.agency</a>
+                        <a href="#"><i class="fas fa-phone"></i> +7 (999) 000-00-00</a>
+                        <a href="#"><i class="fab fa-telegram"></i> @apex_support</a>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="text" name="name" placeholder="Ваше имя" required />
+                    <input type="email" name="email" placeholder="Email" required />
+                    <input type="text" name="phone" placeholder="Телефон" />
+                    <input type="text" name="project" placeholder="Бюджет проекта (примерно)" />
+                    <textarea name="message" placeholder="Опишите задачу..." rows="4" required></textarea>
+                    <button type="submit" class="btn-primary">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ФУТЕР ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">APEX</div>
+                    <p>Премиум-агентство полного цикла.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <a href="#about">О нас</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#cases">Кейсы</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <a href="#"><i class="fas fa-envelope"></i> hello@apex.agency</a>
+                    <a href="#"><i class="fas fa-phone"></i> +7 (999) 000-00-00</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Apex. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+                                                          </html>
